@@ -51,6 +51,12 @@ public class Utente {
 		this.username = username;
 		this.password = password;
 	}
+	public Utente( String nome, String cognome, String username, Date dateCreated) {
+		this.username = username;
+		this.nome = nome;
+		this.cognome = cognome;
+		this.dateCreated = dateCreated;
+	}
 
 	public Utente(String username, String password, String nome, String cognome, Date dateCreated) {
 		this.username = username;

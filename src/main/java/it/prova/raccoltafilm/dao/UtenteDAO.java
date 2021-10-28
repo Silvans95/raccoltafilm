@@ -11,5 +11,6 @@ public interface UtenteDAO extends IBaseDAO<Utente> {
 	public List<Utente> findAllByRuolo(Ruolo ruoloInput);
 	public Optional<Utente> findByUsernameAndPassword(String username,String password);
 	public Optional<Utente> login(String username,String password);
+	List<Utente> findByExample(Utente example) throws Exception;
 
 }
