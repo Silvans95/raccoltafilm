@@ -47,7 +47,7 @@ public class ExecuteRemoveServlet extends HttpServlet {
 			request.getRequestDispatcher("ExecuteListRegistaServlet?operationResult=NOT_FOUND").forward(request, response);
 			return;
 		} catch (RegistaAssociatoException e) {
-			request.getRequestDispatcher("ExecuteListRegistaServlet?operationResult=ASSOCIATO").forward(request, response);
+			request.getRequestDispatcher("ExecuteListRegistaServlet?operationResult=FILM_ASSOCIATI").forward(request, response);
 			return;
 		}catch (Exception e) {
 			// qui ci andrebbe un messaggio nei file di log costruito ad hoc se fosse attivo
